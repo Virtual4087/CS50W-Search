@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo{
+    width: 74px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.header{
+    height: 91px;
+    max-width: 100vw;
+    padding: 0px 40px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header #link{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+}
+
+.header #link:hover{
+    text-decoration: underline;
+}
+
+#Advanced_Search{
+    font-size: 20px;
+    color: #d93025;
+    margin: 0px 0px 20px 40px;
+}
+
+.line{
+    height: 1px;
+    max-width: 100vw;
+    background-color: rgba(148, 148, 148, 0.281);
+}
+
+form{
+    padding: 40px 0px 0px 30px;
+}
+
+table th, td{
+    text-align: start;
+    padding: 10px;
+}
+
+table #Find_pages{
+    font-size: 16px;
+    font-weight: 500;
+    color: #333
+}
+
+table #To_do_this{
+    font-size: 13px;
+    font-weight: 700;
+    color: #777;
+}
+
+table td{
+    font-size: 13px;
+    color: #222;
+}
+
+table td span{
+    font-size: 11px;
+    color: #555;
+}
+
+table td input{
+    height: 25px;
+    width: 560px;
+    border: 1px solid #d9d9d9;;
+}
+
+table td input:focus{
+    outline: none;
+    border: 1px solid blue;
+}
+
+table .search_button{
+    text-align: center;
+}
+
+.search_button button{
+    padding: 8px 12px;
+    font-size: 11px;
+
+    font-weight: bold;
+    color: white;
+    border: 1px solid #3079ed;
+    border-radius: 2px;
+    background-image: linear-gradient(#4d90fe,#4787ed);
+}
+
+.search_button button:hover{
+    background-image: linear-gradient(#5390f3,#497ed3);
+}
+
+
+@media(max-width: 1100px){
+    table span{
+        display: none;
+    }
+
+    table td{
+        white-space: nowrap;
+    } 
+
+    table input{
+        max-width: 60vw;
+        min-width: 300px;
+    }
+}
